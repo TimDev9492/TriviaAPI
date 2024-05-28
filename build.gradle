@@ -16,3 +16,11 @@ dependencies {
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.17.1'
 }
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}
